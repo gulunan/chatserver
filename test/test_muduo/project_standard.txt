@@ -1,0 +1,19 @@
+cmake 会生成很多中间文件
+比如 源文件编译产生的 .o 文件 二进制可重定位文件
+与 项目的工程文件 冗杂到一块
+用 cmake .  在当前工程目录下 执行编译 就会跑到一块
+
+
+一般来说 项目的标准结构 如下
+
+bin 生成的可执行文件
+lib 生成的中间的库文件
+include 头文件
+src 源文件
+build 项目编译工程中产生的临时的中间文件
+example 示例测试文件
+thirdparty 依赖的第三方库的文件 源码
+CMakeLists.txt
+autobuild.sh 编译脚本 里面执行的就是cmake
+
+以及 一些 权限信息 readme等
